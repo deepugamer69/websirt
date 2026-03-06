@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - Manchester United</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #C70101;
+            border-bottom: 2px solid #C70101;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 15px;     
+            margin-top: 20px;
+        }
+
+        
+        .gallery img {
+            width: 300px;  
+            height: auto;   
+            object-fit: cover; 
+            border: 2px solid #333;
+            transition: 0.3s;
+        }
+
+        
+        .gallery img:hover {
+            border-color: #C70101;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Photo Gallery</h1>
+    <p>Glimpses of the magical moments of the real manchester.</p>
+
+    <div class="gallery">
+        
+        <img src="images/squad.jpg" alt="Squad">
+        <img src="images/goat.jpg" alt="city">
+        <img src="images/champions.jpg" alt="cl">
+        <img src="images/bruno.jpg" alt="bruno">
+        <img src="images/trophy.jpg" alt="trophy">
+        <img src="images/old.jpg" alt="Stadium">
+    </div>
+
+</body>
+</html>
