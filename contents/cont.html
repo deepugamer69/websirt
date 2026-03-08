@@ -3,6 +3,19 @@
 <head>
     <title>Contact MUFC</title>
     <style>
+        .pad{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mid{
+    width: 60%;
+}
+
+.nig{
+    width: 30%;
+}
         /* Minimal CSS */
         body {
             background-color: #111;
@@ -22,6 +35,11 @@
             border: 1px solid #444;
             color: #fff;
         }
+        .pad {
+            border: 1px solid gray;
+            padding: 20px;
+            margin-top: 20px;
+        }
         
         button {
             background: #C70101;
@@ -31,6 +49,23 @@
             width: 100%;
             cursor: pointer;
         }
+        .nig{
+            text-align:right ;
+        }
+        select{
+        padding: 10px;
+        border: 2px solid #333;
+        border-radius: 6px;
+        background-color: #f5f5f5;
+        font-size: 16px;
+        color: #333;
+        }
+
+         option {
+         background-color: #222;
+         color: white;
+        padding: 10px;
+}       
     </style>
 </head>
 <body>
@@ -46,9 +81,31 @@
 
         <label>Message:</label>
         <textarea name="message"></textarea>
-
-        <button type="submit">Send</button>
+        <br>
+        <div class = "pad">
+        <h2><font color="red"><u>Short Survey:-</u></font></h2><br><h3><u>Best midfielder:-</u></h3><br>     
+       <div class="pad"><table><tr><th>Paul Scholes</th><th><input type="checkbox" name="midfielder"></th></tr>
+       <tr><th> Roy Keane</th><th><input type="checkbox" name="midfielder"></th></tr>
+        <tr><th> David Beckham</th><th><input type="checkbox" name="midfielder"></th></tr>
+        <tr><th>Michael Carrick </th><th><input type="checkbox" name="midfielder"></th></tr>
+        
+        <tr><th>Bruno Fernandes </th><th><input type="checkbox" name="midfielder"></th></tr>
+        </table></div>
+        <div class = "nig">
+        <font color="red"<label for="manager">Best Manager:</label></font><br>
+        <select name="managers">
+            <option>Sir Alex Ferguson</option>
+            <option>Jose Mourinho</option>
+            <option>Ole Gunnar Solkjaer</option>
+            <option>Eriksen Ten Hag</option>
+            <option>Ruben Amorim</option>                       
+            <option>Michel carrick</option>
+            </select>
+        </table>
+        </div>
+        </div>
+        <br>
+       <button type="submit">Send</button>
     </form>
-
 </body>
 </html>
